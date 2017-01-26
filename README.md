@@ -1,4 +1,4 @@
-![RRCore](RRCore.png =100x100)
+<img src="/RRCore.png?raw=true" alt="RRCore" width="100" height="100">
 
 RRCore
 =
