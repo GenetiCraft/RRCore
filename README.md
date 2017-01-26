@@ -1,3 +1,5 @@
+![RRCore](RRCore.png =100x100)
+
 RRCore
 =
 
