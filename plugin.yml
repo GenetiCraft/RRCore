@@ -1,0 +1,47 @@
+name: RRCore
+version: "1.0.0"
+author: HypertextPP @ RR
+api: ["1.0.0"]
+main: RRCore.Main
+commands:
+  example:
+    description: Nukkit-Example command!
+    usage: /example
+    permission: example.command
+  gmsp:
+    description: Switch yourself (or someone else) into spectator mode.
+    usage: /gmsp <player>
+    permission: RRCore.permission.command.gmsp
+  vote:
+    description: Vote for RetrewRealms!
+    usage: /vote
+    permission: RRCore.permission.command.vote
+  buy:
+    description: Purchase a package!
+    usage: "/buy <package ID : package Name>"
+    permission: RRCore.permission.command.buy
+  packages:
+    description: View available packages.
+    usage: /packages <page>
+    permission: RRCore.permission.command.packages
+  f:
+    description: The main factions command.
+    usage: /f help
+    permission: RRCore.permission.command.f
+permissions:
+  example.command:
+    default: op
+  RRCore.permission.command.gmc:
+    default: op
+  RRCore.permission.command.gms:
+    default: op
+  RRCore.permission.command.gmsp:
+    default: op
+  RRCore.permission.command.vote:
+    default: true
+  RRCore.permission.command.buy:
+    default: true
+  RRCore.permission.command.packages:
+    default: true
+  RRCore.permission.command.f:
+    default: true
