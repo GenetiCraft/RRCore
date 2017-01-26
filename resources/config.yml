@@ -1,2 +1,11 @@
+# - [ RRCore Configuration File ]
+
+#Language Settings
 #Languages Available: eng
 lang: "eng"
+
+#Factions System Settings
+factions:
+    #Whether or not the factions system (/f) should be enabled
+    enabled: true
+    

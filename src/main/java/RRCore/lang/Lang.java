@@ -18,14 +18,14 @@ public class Lang extends Config {
 	private static String DEF_LANG = "eng";
 	
 	public Lang(Main plugin, String shortname) {
-		super(plugin.getLangFolder() + "/" + shortname + ".yml", 2);
+		super(2);
 		this.plugin = plugin;
 		this.shortname = shortname;
-		
-		if(!(boolean)new File(this.plugin.getLangFolder() + "/" + this.shortname + ".yml").exists()) {
+		if(this.plugin.getFileStatus(this.plugin.getLangFolder() + "/" + this.shortname + ".yml") != 1) {
 			this.plugin.getLogger().info(TextFormat.RED + "Language config for '" + this.shortname + "' not found, using default.");
-			if(!(new File(this.plugin.getLangFolder() + "/" + this.DEF_LANG + ".yml").exists())) {
+			if(this.plugin.getFileStatus(this.plugin.getLangFolder() + "/" + this.DEF_LANG + ".yml") != 1) {
 				this.plugin.getLogger().info(TextFormat.RED + "Default language configuration not found! Please reinstall the plugin.");
+				this.plugin.setEnabled(false);
 			} else {
 				this.load(this.plugin.getLangFolder() + "/" + DEF_LANG + ".yml");
 			}
