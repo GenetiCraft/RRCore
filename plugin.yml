@@ -1,0 +1,31 @@
+name: RRCore
+version: "1.0.0"
+author: HypertextPP @ RR
+api: ["1.0.0"]
+main: RRCore.Main
+commands:
+  buy:
+    description: Purchase a package!
+    usage: "/buy <package ID : package Name>"
+    permission: RRCore.permission.command.buy
+  packages:
+    description: View available packages.
+    usage: /packages <page>
+    permission: RRCore.permission.command.packages
+  f:
+    description: The main factions command.
+    usage: /f help
+    permission: RRCore.permission.command.f
+permissions:
+  RRCore.permission.command.gmc:
+    default: op
+  RRCore.permission.command.gms:
+    default: op
+  RRCore.permission.command.gmsp:
+    default: op
+  RRCore.permission.command.buy:
+    default: true
+  RRCore.permission.command.packages:
+    default: true
+  RRCore.permission.command.f:
+    default: true
