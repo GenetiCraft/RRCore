@@ -1,7 +1,4 @@
-<img src="/RRCore.png?raw=true" alt="RRCore" width="100" height="100">
-
-RRCore
-=
+<img src="/RRCore.png?raw=true" alt="RRCore" width="200" height="200">
 
 __A Nukkit core plugin developed for... RR??__
 
